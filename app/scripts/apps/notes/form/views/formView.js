@@ -114,7 +114,7 @@ define([
 
             // Change edit mode
             if (this.configs.editMode !== 'normal') {
-                this.switchMode(this.configs.editMode);
+                //this.switchMode(this.configs.editMode);
             }
         },
 
