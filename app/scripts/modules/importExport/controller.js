@@ -169,7 +169,7 @@ define([
             }, this);
 
             content = this.zip.generate({type: 'blob'});
-            return this.saveToFile(content, 'laverna-backup.zip');
+            return this.saveToFile(content, 'newnbook-backup-'+(new Date()).getFullYear()+"-"+((new Date()).getMonth() + 1)+"-"+(new Date()).getDate()+'.zip');
         },
 
         /**
