@@ -31,7 +31,7 @@ define([
             page : '',
             main : '',
             db   : '',
-            app  : 'Laverna'
+            app  : 'Newnote'
         },
 
         initialize: function() {
