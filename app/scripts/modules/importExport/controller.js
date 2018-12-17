@@ -149,7 +149,7 @@ define([
             return _.reduce(promises, Q.when, new Q())
             .then(function() {
                 var content = self.zip.generate({type: 'blob'});
-                return self.saveToFile(content, 'laverna-backup.zip');
+                return self.saveToFile(content, 'newnotebook-backup.zip');
             });
         },
 
@@ -169,7 +169,7 @@ define([
             }, this);
 
             content = this.zip.generate({type: 'blob'});
-            return this.saveToFile(content, 'laverna-backup.zip');
+            return this.saveToFile(content, 'newnotebook-backup.zip');
         },
 
         /**
@@ -200,7 +200,7 @@ define([
          */
         addToZip: function(profile, notes, notebooks, tags, configs) {
             var self = this,
-                path = 'laverna-backups/' + profile + '/';
+                path = 'notebook-backups/' + profile + '/';
 
             // Save notes as JSON and Markdown files
             _.each(notes, function(note) {
